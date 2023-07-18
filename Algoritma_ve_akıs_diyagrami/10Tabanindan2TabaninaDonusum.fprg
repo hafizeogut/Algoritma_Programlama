@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hafize"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-28 02:19:57 &#214;S"/>
+        <attribute name="created" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTI4OzAyOjAyOjQyIMOWUzszMDQz"/>
+        <attribute name="edited" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTI4OzAyOjE5OjU3IMOWUzsyOzMxNjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, kalan" type="Integer" array="False" size=""/>
+            <declare name="IkiSayiTabani" type="String" array="False" size=""/>
+            <output expression="&quot;sayi giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="IkiSayiTabani" expression="&quot;&quot;"/>
+            <while expression="sayi&gt;1">
+                <assign variable="kalan" expression="sayi % 2"/>
+                <assign variable="sayi" expression="int(sayi/2)"/>
+                <assign variable="IkiSayiTabani" expression="kalan &amp;IkiSayiTabani"/>
+            </while>
+            <assign variable="IkiSayiTabani" expression="&quot;1&quot; &amp; IkiSayiTabani"/>
+            <output expression="IkiSayiTabani" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

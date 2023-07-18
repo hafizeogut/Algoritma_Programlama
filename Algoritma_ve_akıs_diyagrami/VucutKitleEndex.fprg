@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hafize"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-19 05:16:59 &#214;&#214;"/>
+        <attribute name="created" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTE5OzA0OjU5OjQ1IMOWw5Y7MzE5MQ=="/>
+        <attribute name="edited" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTE5OzA1OjE2OjU5IMOWw5Y7MTszMjk4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="VKitleEndex, boy, kilo" type="Integer" array="False" size=""/>
+            <output expression="&quot;kilonuzu giriniz&quot;" newline="True"/>
+            <input variable="kilo"/>
+            <output expression="&quot;Bboyunuzu Giriniz&quot;" newline="True"/>
+            <input variable="boy"/>
+            <assign variable="VKitleEndex" expression="kilo/(boy*boy)"/>
+            <if expression="VKitleEndex &lt;18.5">
+                <then>
+                    <output expression="&quot;Zay&#305;f&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="VKitleEndex &gt;=18.5 &amp;&amp; VKitleEndex &lt;=24.9">
+                        <then>
+                            <output expression="&quot;Sa&#287;l&#305;kl&#305;&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="VKitleEndex &gt;=24.9 &amp;&amp; VKitleEndex &lt;=29.9">
+                                <then>
+                                    <output expression="&quot;fazla kilolu&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="VKitleEndex &gt;=30 &amp;&amp; VKitleEndex &lt;=34.9">
+                                        <then>
+                                            <output expression="&quot;1. dereceden obez&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="VKitleEndex &gt;=35&amp;&amp; VKitleEndex &lt;=39.9">
+                                                <then>
+                                                    <output expression="&quot;2. dereceden obez&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="VKitleEndex &gt;=40">
+                                                        <then>
+                                                            <output expression="&quot;3. dereceden obezite&quot;" newline="True"/>
+                                                        </then>
+                                                        <else/>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

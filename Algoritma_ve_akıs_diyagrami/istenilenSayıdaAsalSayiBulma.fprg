@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hafize"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-29 07:01:11 &#214;S"/>
+        <attribute name="created" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTI5OzA2OjM4OjExIMOWUzszMDUz"/>
+        <attribute name="edited" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTI5OzA3OjAxOjExIMOWUzsxOzMxNTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="istenenAsalSayiAdedi, kontrolEdilenSayi, asalKontrol, bulunanAsalSayi, sayac" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ka&#231; adet asal say&#305; bulmak istediniz&quot;" newline="True"/>
+            <input variable="istenenAsalSayiAdedi"/>
+            <assign variable="bulunanAsalSayi" expression="0"/>
+            <assign variable="kontrolEdilenSayi" expression="2"/>
+            <while expression="istenenAsalSayiAdedi&gt;bulunanAsalSayi">
+                <assign variable="asalKontrol" expression="0"/>
+                <for variable="sayac" start="2" end="kontrolEdilenSayi/2" direction="inc" step="1">
+                    <if expression="kontrolEdilenSayi%sayac==0">
+                        <then>
+                            <assign variable="asalKontrol" expression="1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="asalKontrol==0">
+                    <then>
+                        <output expression="kontrolEdilenSayi" newline="True"/>
+                        <assign variable="bulunanAsalSayi" expression="bulunanAsalSayi+1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="kontrolEdilenSayi" expression="kontrolEdilenSayi+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

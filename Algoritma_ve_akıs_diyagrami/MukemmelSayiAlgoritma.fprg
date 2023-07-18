@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hafize"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-22 08:22:45 &#214;S"/>
+        <attribute name="created" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTIyOzA4OjEyOjMwIMOWUzszMDQx"/>
+        <attribute name="edited" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTIyOzA4OjIyOjQ1IMOWUzsyOzMxNTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="carpanToplam, sayac, sayi" type="Integer" array="False" size=""/>
+            <output expression="&quot;say&#305; giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="carpanToplam" expression="0"/>
+            <for variable="sayac" start="1" end="sayi/2" direction="inc" step="1">
+                <if expression="sayi %sayac ==0">
+                    <then>
+                        <assign variable="carpanToplam" expression="carpanToplam+sayac"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="sayi==carpanToplam">
+                <then>
+                    <output expression="&quot;say&#305;n&#305;z m&#252;kemmel say&#305;d&#305;r&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;say&#305;n&#305;z m&#252;kemmel say&#305; de&#287;ildir&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

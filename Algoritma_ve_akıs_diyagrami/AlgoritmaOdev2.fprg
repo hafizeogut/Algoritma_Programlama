@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hafize"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-30 06:41:55 &#214;&#214;"/>
+        <attribute name="created" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTMwOzA1OjI5OjUwIMOWw5Y7MzE3OA=="/>
+        <attribute name="edited" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTMwOzA2OjQxOjU1IMOWw5Y7NzszMjky"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="BaslangicDeger, SonDeger, Toplam, ToplamUc, ToplamDort, ToplamBes, i, Carpim" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ba&#351;lang&#305;&#231; De&#287;eri:&quot;" newline="True"/>
+            <input variable="BaslangicDeger"/>
+            <output expression="&quot;Son De&#287;er:&quot;" newline="True"/>
+            <input variable="SonDeger"/>
+            <assign variable="ToplamUc" expression="0"/>
+            <assign variable="ToplamDort" expression="0"/>
+            <assign variable="ToplamBes" expression="0"/>
+            <assign variable="Carpim" expression="1"/>
+            <for variable="i" start="BaslangicDeger" end="SonDeger" direction="inc" step="1">
+                <if expression="i==0">
+                    <then/>
+                    <else>
+                        <if expression="i%3==0">
+                            <then>
+                                <assign variable="ToplamUc" expression="ToplamUc+i"/>
+                                <assign variable="Carpim" expression="Carpim*i"/>
+                            </then>
+                            <else>
+                                <if expression="i%4==0">
+                                    <then>
+                                        <assign variable="ToplamDort" expression="ToplamDort+i"/>
+                                        <assign variable="Carpim" expression="Carpim*i"/>
+                                    </then>
+                                    <else>
+                                        <if expression="i%5==0">
+                                            <then>
+                                                <assign variable="ToplamBes" expression="ToplamBes+i"/>
+                                                <assign variable="Carpim" expression="Carpim*i"/>
+                                            </then>
+                                            <else/>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <assign variable="Toplam" expression="ToplamUc+ToplamDort+ToplamBes"/>
+            <output expression="Toplam" newline="True"/>
+            <output expression="Carpim" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

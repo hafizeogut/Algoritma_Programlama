@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hafize"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-20 02:56:49 &#214;S"/>
+        <attribute name="created" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTE5OzA1OjI0OjQ5IMOWw5Y7MzE4OA=="/>
+        <attribute name="edited" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTIwOzAyOjU2OjQ5IMOWUzsyOzMxNjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <declare name="Disk, X1, X2" type="Real" array="False" size=""/>
+            <output expression="&quot;s&#305;ra ile a b c de&#287;eriniz giriniz&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="Disk" expression="(b*b-4*a*c)"/>
+            <if expression="Disk&lt;0">
+                <then>
+                    <output expression="&quot;GER&#199;EL K&#214;K&#220; YOKTUR&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Disk&gt;0">
+                        <then>
+                            <assign variable="X1" expression="(-b+(Disk)^(1/2))/2*a"/>
+                            <assign variable="X2" expression="(-b-(Disk)^(1/2))/2*a"/>
+                            <output expression="X1 &amp;&amp; X2" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="Disk==0">
+                        <then>
+                            <assign variable="X1" expression="-b/2*a"/>
+                            <output expression="&quot;k&#246;kleriniz &#231;ak&#305;&#351;&#305;k olup birbirine e&#351;ittir&quot; &amp;&amp; X1" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

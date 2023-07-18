@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hafize"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-30 10:40:10 &#214;&#214;"/>
+        <attribute name="created" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTMwOzA5OjMyOjMwIMOWw5Y7MzE3NA=="/>
+        <attribute name="edited" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTMwOzEwOjQwOjEwIMOWw5Y7NTszMjc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Sayi1, Sayi2, Sayac, Sonuc" type="Integer" array="False" size=""/>
+            <input variable="Sayi1"/>
+            <input variable="Sayi2"/>
+            <assign variable="Sonuc" expression="0"/>
+            <if expression="Sayi1&gt;0 &amp;&amp; Sayi2&gt;0">
+                <then>
+                    <if expression="Sayi1&gt;Sayi2">
+                        <then>
+                            <for variable="Sayac" start="1" end="Sayi2" direction="inc" step="1">
+                                <assign variable="Sonuc" expression="Sonuc+Sayi1"/>
+                            </for>
+                        </then>
+                        <else>
+                            <for variable="Sayac" start="1" end="Sayi1" direction="inc" step="1">
+                                <assign variable="Sonuc" expression="Sonuc+Sayi2"/>
+                            </for>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="Sayi1&lt;0 &amp;&amp; Sayi2&lt;0">
+                        <then>
+                            <if expression="Sayi1&gt;Sayi2">
+                                <then>
+                                    <for variable="Sayac" start="-1" end="Sayi1" direction="dec" step="1">
+                                        <assign variable="Sonuc" expression="Sonuc+Sayi2"/>
+                                    </for>
+                                </then>
+                                <else>
+                                    <for variable="Sayac" start="-1" end="Sayi2" direction="dec" step="1">
+                                        <assign variable="Sonuc" expression="Sonuc+Sayi1"/>
+                                    </for>
+                                </else>
+                            </if>
+                            <assign variable="Sonuc" expression="-Sonuc"/>
+                        </then>
+                        <else>
+                            <if expression="Sayi1&gt;0 &amp;&amp; Sayi2&lt;0">
+                                <then>
+                                    <assign variable="Sayi2" expression="-Sayi2"/>
+                                    <for variable="Sayac" start="1" end="Sayi1" direction="inc" step="1">
+                                        <assign variable="Sonuc" expression="Sonuc+Sayi2"/>
+                                    </for>
+                                    <assign variable="Sonuc" expression="-Sonuc"/>
+                                </then>
+                                <else>
+                                    <if expression="Sayi1&lt;0 &amp;&amp; Sayi2&gt;0">
+                                        <then>
+                                            <assign variable="Sayi1" expression="-Sayi1"/>
+                                            <for variable="Sayac" start="1" end="Sayi1" direction="inc" step="1">
+                                                <assign variable="Sonuc" expression="Sonuc+Sayi2"/>
+                                            </for>
+                                            <assign variable="Sonuc" expression="-Sonuc"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="Sonuc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

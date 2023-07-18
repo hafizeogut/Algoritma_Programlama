@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hafize"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-30 07:00:23 &#214;&#214;"/>
+        <attribute name="created" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTMwOzA0OjExOjMyIMOWw5Y7MzE2OA=="/>
+        <attribute name="edited" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTMwOzA3OjAwOjIzIMOWw5Y7ODszMjg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NegatifCiftToplam, NegatifTekToplam, NegatifCiftCarpim, NegatifTekCarpim, PozitifCiftToplam, PozitifTekToplam, PozitifCiftCarpim, PozitifTekCarpim, Sayi" type="Integer" array="False" size=""/>
+            <assign variable="NegatifCiftToplam" expression="0"/>
+            <assign variable="NegatifTekToplam" expression="0"/>
+            <assign variable="NegatifCiftCarpim" expression="1"/>
+            <assign variable="NegatifTekCarpim" expression="1"/>
+            <assign variable="PozitifCiftToplam" expression="0"/>
+            <assign variable="PozitifTekToplam" expression="0"/>
+            <assign variable="PozitifCiftCarpim" expression="1"/>
+            <assign variable="PozitifTekCarpim" expression="1"/>
+            <for variable="Sayi" start="-10" end="10" direction="inc" step="1">
+                <if expression="Sayi==0">
+                    <then/>
+                    <else>
+                        <if expression="Sayi&gt;0">
+                            <then>
+                                <if expression="Sayi%2==0">
+                                    <then>
+                                        <assign variable="PozitifCiftToplam" expression="PozitifCiftToplam+Sayi"/>
+                                        <assign variable="PozitifCiftCarpim" expression="PozitifCiftCarpim*Sayi"/>
+                                    </then>
+                                    <else>
+                                        <assign variable="PozitifTekToplam" expression="PozitifTekToplam+Sayi"/>
+                                        <assign variable="PozitifTekCarpim" expression="PozitifTekCarpim*Sayi"/>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <assign variable="Sayi" expression="-Sayi"/>
+                                <if expression="Sayi%2==0">
+                                    <then>
+                                        <assign variable="Sayi" expression="-Sayi"/>
+                                        <assign variable="NegatifCiftToplam" expression="NegatifCiftToplam+Sayi"/>
+                                        <assign variable="NegatifCiftCarpim" expression="NegatifCiftCarpim*Sayi"/>
+                                    </then>
+                                    <else>
+                                        <assign variable="Sayi" expression="-Sayi"/>
+                                        <assign variable="NegatifTekToplam" expression="negatifTekToplam+Sayi"/>
+                                        <assign variable="NegatifTekCarpim" expression="NegatifTekCarpim*Sayi"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;Negatif &#199;ift Say&#305;lar&#305;n Toplam&#305;: &quot; &amp;NegatifCiftToplam &amp;&quot;   &quot;      &amp;&quot;Negatif Tek Say&#305;lar&#305;n Toplam&#305;: &quot; &amp;NegatifTekToplam &amp;&quot;   &quot; &#13;&#10;&amp;&quot;Negatif &#199;ift Say&#305;lar&#305;n &#199;arp&#305;m&#305;: &quot; &amp;NegatifCiftCarpim&amp;&quot;  &quot;       &amp;&quot;Negatif Tek Say&#305;lar&#305;n &#199;arp&#305;m&#305;: &quot;&amp;NegatifTekCarpim&amp;&quot;  &quot;        &amp;&quot;Pozitif &#199;ift Say&#305;lar&#305;n Toplam&#305;: &quot;&amp;PozitifCiftToplam&amp;&quot;   &quot;        &amp;&quot;Pozitif Tek Say&#305;lar&#305;n Toplam&#305;: &quot;&amp;PozitifTekToplam&amp;&quot;   &quot; &#13;&#10;&amp;&quot;Pozitif &#199;ift Say&#305;lar&#305;n &#199;arp&#305;m&#305;: &quot;&amp; PozitifCiftCarpim&amp;&quot;  &quot;             &amp;&quot;Pozitif Tek Say&#305;lar&#305;n &#199;arp&#305;m&#305;: &quot;&amp;PozitifTekCarpim&amp;&quot;  &quot;" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>

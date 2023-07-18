@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hafize"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-21 04:45:36 &#214;S"/>
+        <attribute name="created" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTIxOzA0OjQwOjQ1IMOWUzszMDQz"/>
+        <attribute name="edited" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTIxOzA0OjQ1OjM2IMOWUzsxOzMxNTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Sayac" type="Integer" array="False" size=""/>
+            <declare name="isim" type="String" array="False" size=""/>
+            <input variable="isim"/>
+            <for variable="Sayac" start="0" end="10" direction="inc" step="1">
+                <output expression="Sayac&amp;&quot;&quot;&amp; isim" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

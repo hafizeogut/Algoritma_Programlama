@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hafize"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-26 10:17:56 &#214;&#214;"/>
+        <attribute name="created" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTI2OzEwOjExOjMxIMOWw5Y7MzE2OQ=="/>
+        <attribute name="edited" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTI2OzEwOjE3OjU2IMOWw5Y7MTszMjkw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, faktoriyel, i" type="Integer" array="False" size=""/>
+            <input variable="sayi"/>
+            <assign variable="faktoriyel" expression="1"/>
+            <for variable="i" start="1" end="sayi" direction="inc" step="1">
+                <assign variable="faktoriyel" expression="faktoriyel*i"/>
+            </for>
+            <output expression="&quot;girdi&#287;iniz say&#305;n&#305;n fakt&#246;riyeli  &quot;&amp;faktoriyel" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

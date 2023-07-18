@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hafize"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-28 01:49:56 &#214;S"/>
+        <attribute name="created" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTI4OzAxOjM5OjA2IMOWUzszMDUy"/>
+        <attribute name="edited" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTI4OzAxOjQ5OjU2IMOWUzsxOzMxNjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sayac, asalDurumKontrol" type="Integer" array="False" size=""/>
+            <output expression="&quot;Bir Say&#305; Giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="asalDurumKontrol" expression="0"/>
+            <for variable="sayac" start="2" end="sayi/2" direction="inc" step="1">
+                <if expression="sayi%sayac==0">
+                    <then>
+                        <assign variable="asalDurumKontrol" expression="1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="asalDurumKontrol==0">
+                <then>
+                    <output expression="&quot;say&#305;n&#305; asald&#305;r&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;say&#305;n&#305;z asal de&#287;ildir&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

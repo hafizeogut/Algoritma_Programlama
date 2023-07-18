@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hafize"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-26 10:05:17 &#214;&#214;"/>
+        <attribute name="created" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTI2OzA5OjU4OjU3IMOWw5Y7MzE5Ng=="/>
+        <attribute name="edited" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTI2OzEwOjA1OjE3IMOWw5Y7MTszMjg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="5" direction="inc" step="1">
+                <for variable="j" start="1" end="10" direction="inc" step="1">
+                    <output expression="i&amp;&quot; x &quot; &amp;j&amp;&quot; = &quot;&amp;i*j" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

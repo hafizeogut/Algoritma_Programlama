@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hafize"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-19 12:05:45 &#214;&#214;"/>
+        <attribute name="created" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTE4OzExOjU1OjI3IMOWUzszMDUz"/>
+        <attribute name="edited" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTE5OzEyOjA1OjQ1IMOWw5Y7MTszMjg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Real" array="False" size=""/>
+            <output expression="&quot;Bir de&#287;er giriniz&quot;" newline="True"/>
+            <input variable="x"/>
+            <if expression="x&lt;1">
+                <then>
+                    <assign variable="y" expression="3*x-4"/>
+                </then>
+                <else>
+                    <if expression="x &gt;=1 &amp;&amp; x&lt;=10">
+                        <then>
+                            <assign variable="y" expression="x+2"/>
+                        </then>
+                        <else>
+                            <if expression="x&gt;10">
+                                <then>
+                                    <assign variable="y" expression="2*x+6"/>
+                                </then>
+                                <else>
+                                    <output expression="y" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hafize"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-26 11:10:54 &#214;&#214;"/>
+        <attribute name="created" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTI2OzExOjA3OjQwIMOWw5Y7MzE3NQ=="/>
+        <attribute name="edited" value="SGFmaXplO0RFU0tUT1AtSkE2TTQxTzsyMDIxLTExLTI2OzExOjEwOjU0IMOWw5Y7MTszMjgy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, toplam" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <input variable="sayi"/>
+            <while expression="sayi!=0">
+                <assign variable="toplam" expression="toplam+sayi"/>
+                <input variable="sayi"/>
+            </while>
+            <output expression="&quot;toplam:  &quot;&amp;toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
